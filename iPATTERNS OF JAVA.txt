@@ -1,0 +1,472 @@
+i>PATTERN 1:
+
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        for (int row = 0;row<a;row++){
+            for(int col=0;col<a;col++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+
+OUTPUT:
+5
+
+*****
+*****
+*****
+*****
+*****
+
+ii>PATTERN 2:
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        for (int row = 0;row<a;row++){
+            for(int col=0;col<=row;col++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+
+OUTPUT:
+
+5
+
+*
+**
+***
+****
+*****
+
+
+iii> PATTERN 3
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int size=sc.nextInt();
+        for (int row = 0;row<size;row++){
+            for(int col=0;col<size-row;col++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+OUTPUT:
+
+    5
+
+*****
+****
+***
+**
+*
+
+iv> PATTERN 4:
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int size=sc.nextInt();
+        for (int row = 0;row<size;row++){
+            for(int col=0;col<2*row+1;col++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+
+OUTPUT:
+
+ 5
+
+*
+***
+*****
+*******
+*********
+        
+iv> PATTERN 5:
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int size=sc.nextInt();
+        int t = 2*size-1;
+        for (int row = 0;row<size;row++){
+            for(int col=0;col<t;col++){
+                System.out.print("*");
+            }
+            t=t-2;
+            System.out.println();
+        }
+    }
+    
+}
+
+OUTPUT:
+
+5
+
+*********
+*******
+*****
+***
+*
+
+vi>PATTERN 6:
+
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int size=sc.nextInt();
+        for (int row = 0;row<size;row++){
+            for(int col=0;col<size-row-1;col++){
+                System.out.print(" ");
+            }
+            for(int col=0;col<row;col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+OUTPUT: 
+
+5
+   * 
+  * * 
+ * * * 
+* * * * 
+
+vii> PATTERN 7:
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int size=sc.nextInt();
+        for (int row = 0;row<size;row++){
+            for(int col=0;col<size-row;col++){
+                System.out.print(" ");
+            }
+            for(int col=0;col<row;col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+OUTPUT:
+
+5
+
+    * 
+   * * 
+  * * * 
+ * * * * 
+
+
+viii> PATTERN 8:
+
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int size=sc.nextInt();
+        for (int row = 0;row<size;row++){
+            for(int col=0;col<row;col++){
+                System.out.print(" ");
+            }
+            for(int col=0;col<size-row;col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+OUTPUT :
+
+5
+
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+
+ix> PATTERN 9:
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int size=sc.nextInt();
+        for (int row = 0;row<size;row++){
+            for(int col=0;col<row;col++){
+                System.out.print(" ");
+            }
+            for(int col=0;col<size-row-1;col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+
+
+X> PATTERN 10:
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int size=sc.nextInt();
+        for (int row = 0;row<size-1;row++){
+            for(int col=0;col<size-row-1;col++){
+                System.out.print(" ");
+            }
+            for(int col=0;col<=row;col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+         for (int row = 0;row<size;row++){
+            for(int col=0;col<row;col++){
+                System.out.print(" ");
+            }
+            for(int col=0;col<size-row;col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+OUTPUT: 
+
+   5
+
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+
+PATTERN 11:
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        for (int row = 0;row<a;row++){
+            for(int col=0;col<a;col++){
+                if(row==0||row==a-1||col==0||col==a-1){
+                System.out.print("* ");
+            }
+            else{
+                System.out.print("  ");
+            }
+            }
+            System.out.println();
+        
+        }
+    }
+}
+
+OUTPUT:
+
+10
+
+* * * * * * * * * * 
+*                 * 
+*                 * 
+*                 * 
+*                 * 
+*                 * 
+*                 * 
+*                 * 
+*                 * 
+* * * * * * * * * * 
+
+
+PATTERN 12:
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        for (int row = 0;row<a;row++){
+            for(int col=0;col<a;col++){
+                if(col==0||row==a-1||col==row){
+                System.out.print("* ");
+            }
+            else{
+                System.out.print("  ");
+            }
+            }
+            System.out.println();
+        
+        }
+    }
+}
+    
+
+
+OUTPUT:
+
+10
+*                   
+* *                 
+*   *               
+*     *             
+*       *           
+*         *         
+*           *       
+*             *     
+*               *   
+* * * * * * * * * * 
+
+PATTERN 13 :
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        for (int row = 0;row<a;row++){
+            for(int col=0;col<a;col++){
+                if(row==a-1||col==a-1||col+row==a-1){
+                System.out.print("* ");
+            }
+            else{
+                System.out.print("  ");
+            }
+            }
+            System.out.println();
+        
+        }
+    }
+}
+    
+
+OUTPUT:
+
+10
+                  * 
+                * * 
+              *   * 
+            *     * 
+          *       * 
+        *         * 
+      *           * 
+    *             * 
+  *               * 
+* * * * * * * * * * 
+
+pattern 13:
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        for (int row = 0;row<a;row++){
+            for(int col=0;col<a;col++){
+                if(col==0||col==a-1||(col==row && row<=a/2)||(col+row==a-1&& row<=a/2)){
+                System.out.print("* ");
+            }
+            else{
+                System.out.print("  ");
+            }
+            }
+            System.out.println();
+        
+        }
+    }
+}
+    
+
+OUTPUT :
+
+11   
+*                   * 
+* *               * * 
+*   *           *   * 
+*     *       *     * 
+*       *   *       * 
+*         *         * 
+*                   * 
+*                   * 
+*                   * 
+*                   * 
+*                   * 
+
+
+PATTERN 14:
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        for (int row = 0;row<a;row++){
+            for(int col=0;col<a;col++){
+                if(col==0||row<=a/2 && col+row==a/2||row>a/2 && row-col=a/2){
+                System.out.print("* ");
+            }
+            else{
+                System.out.print("  ");
+            }
+            }
+            System.out.println();
+        
+        }
+    }
+}
+
+
+OUTPUT:
